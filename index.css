@@ -2,10 +2,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
+    max-width: 600px;
+    background-color: rgb(5, 64, 66);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12rem auto;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+}
+
+.homeSection h3{
+    margin: 0 0 0 10px;
+}
+
+.guestSection h3{
+    margin: 0 0 0 3px;
+}
+
+.homeSection h3, .guestSection h3{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.homescore-box, .guestscore-box {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 5px 0 25px 0;
+    padding: 15px 5px;
+}
+
+.homeButtons , .guestButtons {
+    display: flex;
+    gap: 10px;
+}
+
+.homeButtons button, .guestButtons button{
+    padding: 7px 14px;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    background-color: rgb(5, 64, 66);
+    color: #fff;
 }
