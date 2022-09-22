@@ -53,3 +53,7 @@
     background-color: rgb(5, 64, 66);
     color: #fff;
 }
+
+.homeButtons button:hover, .guestButtons button:hover{
+    color: black;
+}

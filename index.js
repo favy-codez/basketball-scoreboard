@@ -1,33 +1,35 @@
-let num1 = 8
-let num2 = 2
-document.getElementById("num1-el").textContent = num1
-document.getElementById("num2-el").textContent = num2
+let homebox= 0
+let guestbox = 0
 
-// Create four functions: add(), subtract(), divide(), multiply()
-// Call the correct function when the user clicks on one of the buttons
-// Perform the given calculation using num1 and num2
-// Render the result of the calculation in the paragraph with id="sum-el"
+document.getElementById("homebox-el").textContent = homeboxEl
+document.getElementById("guestbox-el").textContent = guestboxEl
 
-// E.g. if the user clicks on the "Plus" button, you should render
-// "Sum: 10" (since 8 + 2 = 10) inside the paragraph with id="sum-el"
-let sumEl = document.getElementById("sum-el")
-
-function add() {
-    let result = num1 + num2
-    sumEl.textContent = "Sum: " + result
+function add1point() {
+    homebox += 1
+    homeboxEl.textContent = homebox
 }
 
-function subtract() {
-    let result = num1 - num2
-    sumEl.textContent = "Sum: " + result
+function add2point() {
+    homebox += 2
+    homeboxEl.textContent = homebox
 }
 
-function divide() {
-    let result = num1 / num2
-    sumEl.textContent = "Sum: " + result
+function add3point() {
+    homebox += 3
+    homeboxEl.textContent = homebox
 }
 
-function multiply() {
-    let result = num1 * num2
-    sumEl.textContent = "Sum: " + result
+function add1points() {
+    guestbox += 1
+    guestboxEl.textContent = guestbox
+}
+
+function add2points(){
+    guestbox += 2
+    guestboxEl.textContent = guestbox
+}
+
+function add3points(){
+    guestbox += 3
+    guestboxEl.textContent = guestbox
 }
