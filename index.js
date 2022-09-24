@@ -1,9 +1,9 @@
-let homebox= 0
-let guestbox = 0
+let homeboxEl= document.getElementById("homebox-el")
+let guestboxEl = document.getElementById("guestbox-el")
 
-document.getElementById("homebox-el").textContent = homeboxEl
-document.getElementById("guestbox-el").textContent = guestboxEl
 
+
+let homebox=0
 function add1point() {
     homebox += 1
     homeboxEl.textContent = homebox
@@ -19,6 +19,8 @@ function add3point() {
     homeboxEl.textContent = homebox
 }
 
+
+let guestbox=0
 function add1points() {
     guestbox += 1
     guestboxEl.textContent = guestbox
