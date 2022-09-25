@@ -12,25 +12,28 @@
 </head>
 <body>
     <div class="container">
-        <div class="homeSection">
-            <h3>HOME</h3>
-            <p class="homescore-box" id="homebox-el">0</p>
-            <div class="homeButtons">
-                <button onclick="add1point()">+1</button>
-                <button onclick="add2point()">+2</button>
-                <button onclick="add3point()">+3</button>
+        <div class="sections">
+            <div class="homeSection">
+                <h3>HOME</h3>
+                <p class="homescore-box" id="homebox-el">0</p>
+                <div class="homeButtons">
+                    <button onclick="add1point()">+1</button>
+                    <button onclick="add2point()">+2</button>
+                    <button onclick="add3point()">+3</button>
+                </div>
+            </div>
+    
+            <div class="guestSection">
+                <h3>GUEST</h3>
+                <p class="guestscore-box" id="guestbox-el">0</p>
+                <div class="guestButtons">
+                    <button onclick="add1points()">+1</button>
+                    <button onclick="add2points()">+2</button>
+                    <button onclick="add3points()">+3</button>
+                </div>
             </div>
         </div>
-
-        <div class="guestSection">
-            <h3>GUEST</h3>
-            <p class="guestscore-box" id="guestbox-el">0</p>
-            <div class="guestButtons">
-                <button onclick="add1points()">+1</button>
-                <button onclick="add2points()">+2</button>
-                <button onclick="add3points()">+3</button>
-            </div>
-        </div>
+        <button id="resetBtn" onclick="function reset() ">Reset Game 🔁</button>
     </div>
     <script src="/index.js"></script>
 </body>

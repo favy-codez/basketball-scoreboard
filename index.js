@@ -1,8 +1,8 @@
+const homeboxEl = document.getElementById("homebox-el")
+const guestboxEl = document.getElementById("guestbox-el")
+
 let homebox= 0
 let guestbox = 0
-
-document.getElementById("homebox-el").textContent = homeboxEl
-document.getElementById("guestbox-el").textContent = guestboxEl
 
 function add1point() {
     homebox += 1
@@ -33,3 +33,5 @@ function add3points(){
     guestbox += 3
     guestboxEl.textContent = guestbox
 }
+
+function reset() 

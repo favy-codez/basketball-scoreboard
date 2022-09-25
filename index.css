@@ -5,15 +5,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
+.container{
     max-width: 600px;
     background-color: rgb(5, 64, 66);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 12rem auto;
     padding: 2rem 4rem;
     border-radius: 10px;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .homeSection h3{
@@ -56,4 +60,19 @@
 
 .homeButtons button:hover, .guestButtons button:hover{
     color: black;
+}
+
+#resetBtn{
+    display: block;
+    margin: 1.5rem auto;
+    /* background-color: rgb(5, 64, 66); */
+    border-radius: 12px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding: 7px 14px;
+}
+
+#resetBtn:hover{
+    color: rgb(5, 64, 66);
 }
