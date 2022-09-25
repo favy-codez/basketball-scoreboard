@@ -5,12 +5,30 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background: url(/basket.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mainText{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 1rem 0;
+} 
+
 .container{
     max-width: 600px;
-    background-color: rgb(5, 64, 66);
+    background-color: #000;
     margin: 12rem auto;
     padding: 2rem 4rem;
     border-radius: 10px;
+}
+
+.sections img{
+    width: 29%;
+    margin-top: 12px;
 }
 
 .sections {
@@ -34,7 +52,8 @@
 }
 
 .homescore-box, .guestscore-box {
-    background-color: black;
+    background-color: rgb(5, 64, 66);
+    border: 1px solid #fff;
     color: #fff;
     text-align: center;
     font-size: 3rem;
@@ -59,6 +78,8 @@
 
 .homeButtons button:hover, .guestButtons button:hover{
     color: black;
+    background-color: #fff;
+    transition: 0.7s;
 }
 
 #resetBtn{
@@ -66,14 +87,16 @@
     margin: 1.5rem auto;
     /* background-color: rgb(5, 64, 66); */
     border-radius: 12px;
-    background-color: #000;
-    border: none;
+    background-color: rgb(5, 64, 66);
+    border: 1px solid #fff;
     color: #fff;
     padding: 10px 22px;
 }
 
 #resetBtn:hover{
-    color: rgb(5, 64, 66);
+    color: black;
+    background-color: #fff;
+    transition: 0.7s;
 }
 
 @media screen and (max-width:375px){
@@ -92,5 +115,11 @@
     }
     .homeButtons, .guestButtons{
         gap: 5px;
+    }
+    .sections{
+        padding: 1rem;
+    }
+    .sections img{
+        display: none;
     }
 }
