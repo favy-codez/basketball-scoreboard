@@ -34,4 +34,7 @@ function add3points(){
     guestboxEl.textContent = guestbox
 }
 
-function reset() 
+function reset() {
+    homeboxEl.textContent = 0
+    guestboxEl.textContent = 0
+}

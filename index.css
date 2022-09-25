@@ -17,7 +17,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .homeSection h3{
@@ -70,9 +69,28 @@
     background-color: #000;
     border: none;
     color: #fff;
-    padding: 7px 14px;
+    padding: 10px 22px;
 }
 
 #resetBtn:hover{
     color: rgb(5, 64, 66);
+}
+
+@media screen and (max-width:375px){
+    .container{
+        max-width: 400px;
+        padding: 2rem 2rem;
+    }
+    .homescore-box, .guestscore-box{
+        padding: 10px 2px;
+    }
+    .homeSection h3, .guestSection h3{
+        font-size: 1.7rem;
+    }
+    .homeSection h3, .guestSection h3{
+        margin-left: 2.3rem;
+    }
+    .homeButtons, .guestButtons{
+        gap: 5px;
+    }
 }
