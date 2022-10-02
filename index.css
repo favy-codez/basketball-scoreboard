@@ -51,18 +51,18 @@ body{
     margin: 3px auto 2rem auto;
 }
 
-.period{
+#period{
     padding: 5px 8px;
     border-radius: 7px;
     border: 1px solid #fff;
-    background-color: rgb(114, 160, 161);
-    color: #fff;
+    background-color: rgb(178, 220, 221);
+    color: #000;
     margin: 0rem auto 0 auto;
 }
 
-.period:hover{
-    color: black;
-    background-color: #fff;
+#period:hover{
+    color: #fff;
+    background-color: rgb(5, 64, 66);
     transition: 0.7s;
 }
 

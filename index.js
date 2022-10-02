@@ -1,5 +1,6 @@
 const homeboxEl = document.getElementById("homebox-el")
 const guestboxEl = document.getElementById("guestbox-el")
+const periodNum =document.getElementById("period-num")
 
 let homebox= 0
 let guestbox = 0
