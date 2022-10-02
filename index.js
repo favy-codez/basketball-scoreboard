@@ -6,10 +6,20 @@ let homebox= 0
 let guestbox = 0
 let periodNo = 1
 
-function add1point() {
-    homebox += 1
-    homeboxEl.textContent = homebox
-    homeboxEl.style.color = "white"
+
+
+function add1point(points) {
+    switch(points){
+        case "addOne":
+            homebox += 1
+            break;
+            case "addTwo":
+                homebox += 2
+                break;
+    }
+    // homebox += 1
+    // homeboxEl.textContent = homebox
+    // homeboxEl.style.color = "white"
 }
 
 function add2point() {
@@ -61,4 +71,14 @@ function reset() {
     periodNum.textContent = 1
 }
 
-//  color section
+// //  color section
+// if(homeboxEl>guestboxEl){
+//     homeboxEl.style.color = "green"
+//     guestboxEl.style.color = "red"
+// }if(guestboxEl>homeboxEl){
+//     homeboxEl.style.color = "red"
+//     guestboxEl.style.color = "green"
+// }else(guestboxEl===homeboxEl){
+//     homeboxEl.style.color = "black"
+//     guestboxEl.style.color = "black"
+// }
