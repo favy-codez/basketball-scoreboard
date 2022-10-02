@@ -7,8 +7,8 @@
 
 body{
     background: url(/basket.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover; 
+    background-repeat: no-repeat; 
 }
 
 #mainText{
@@ -19,16 +19,51 @@ body{
 } 
 
 .container{
-    max-width: 600px;
+    max-width: 700px;
     background-color: #000;
     margin: 12rem auto;
     padding: 2rem 4rem;
     border-radius: 10px;
 }
 
-.sections img{
-    width: 29%;
+.middle-section img{
+    width: 40%;
+    margin: 12px auto 0 auto;
     margin-top: 12px;
+}
+
+.middle-section h5{
+    color: rgb(5, 64, 66);
+    text-align: center;
+    font-size: 19px;
+    margin-bottom: 1rem;
+}
+
+#period-num{
+    padding: 5px 8px;
+    font-size: 18px;
+    width: 3rem;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+    margin: 3px auto 2rem auto;
+}
+
+.period{
+    padding: 5px 8px;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    background-color: rgb(114, 160, 161);
+    color: #fff;
+    margin: 0rem auto 0 auto;
+}
+
+.period:hover{
+    color: black;
+    background-color: #fff;
+    transition: 0.7s;
 }
 
 .sections {
