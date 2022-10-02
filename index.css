@@ -58,6 +58,7 @@ body{
     background-color: rgb(178, 220, 221);
     color: #000;
     margin: 0rem auto 0 auto;
+    cursor: pointer;
 }
 
 #period:hover{
