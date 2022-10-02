@@ -6,9 +6,26 @@ let homebox= 0
 let guestbox = 0
 let periodNo = 1
 
+function add1point(){
+    homePoints("add-one")
+}
+function add2point(){
+    homePoints("add-two")
+}
+function add3point(){
+    homePoints("add-three")
+}
+function add1points(){
+    guestpoints("add-one")
+}
+function add1points(){
+    guestpoints("add-two")
+}
+function add1points(){
+    guestpoints("add-three")
+}
 
-
-function add1point(points) {
+ {
     switch(points){
         case "addOne":
             homebox += 1
