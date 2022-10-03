@@ -110,6 +110,7 @@ body{
     border: 1px solid #fff;
     background-color: rgb(5, 64, 66);
     color: #fff;
+    cursor: pointer;
 }
 
 .homeButtons button:hover, .guestButtons button:hover{
@@ -121,7 +122,7 @@ body{
 #resetBtn{
     display: block;
     margin: 1.5rem auto;
-    /* background-color: rgb(5, 64, 66); */
+    cursor: pointer;
     border-radius: 12px;
     background-color: rgb(5, 64, 66);
     border: 1px solid #fff;

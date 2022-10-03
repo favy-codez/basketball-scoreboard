@@ -1,12 +1,14 @@
-const homeboxEl = document.getElementById("homebox-el")
-const guestboxEl = document.getElementById("guestbox-el")
+let homeboxEl = document.getElementById("homebox-el")
+let guestboxEl = document.getElementById("guestbox-el")
 const periodNum =document.getElementById("period-num")
 
 let homebox= 0
 let guestbox = 0
 let periodNo = 1
 
+
 function add1point() {
+    let homebox= 0
     homebox += 1
     homeboxEl.textContent = homebox
     homeboxEl.style.color = "white"
@@ -27,7 +29,7 @@ function add3point() {
 // period section
 function period(){
     if(periodNo <= 3){
-        periodNo += 1
+        period
         periodNum.textContent = periodNo
     }else {
         
@@ -38,6 +40,7 @@ function period(){
 function add1points() {
     guestbox += 1
     guestboxEl.textContent = guestbox
+    guestboxEl.style.color = "white"
 }
 
 function add2points(){
@@ -59,3 +62,14 @@ function reset() {
     guestboxEl.style.color = "black"
     periodNum.textContent = 1
 }
+
+// if (homeboxEl > guestboxEl){
+//     homebox.style.color="green"
+//     guestbox.style.color="red"
+// }else if (homeboxEl < guestboxEl){
+//     homebox.style.color="red"
+//     guestbox.style.color="green"
+// }else(homeboxEl === guestboxEl){
+//     homebox.style.color="green"
+//     guestbox.style.color="green"
+// 
