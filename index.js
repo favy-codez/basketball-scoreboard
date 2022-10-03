@@ -1,5 +1,5 @@
-let homeboxEl = document.getElementById("homebox-el")
-let guestboxEl = document.getElementById("guestbox-el")
+const homeboxEl = document.getElementById("homebox-el")
+const guestboxEl = document.getElementById("guestbox-el")
 const periodNum =document.getElementById("period-num")
 
 let homebox= 0
@@ -37,7 +37,7 @@ function period(){
 }
 
 // guest section
-function add1points() {
+function add1points(x) {
     guestbox += 1
     guestboxEl.textContent = guestbox
     guestboxEl.style.color = "white"
