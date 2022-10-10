@@ -29,10 +29,8 @@ function add3point() {
 // period section
 function period(){
     if(periodNo <= 3){
-        period
+        periodNo += 1
         periodNum.textContent = periodNo
-    }else {
-        
     }
 }
 
@@ -57,19 +55,8 @@ function add3points(){
 
 function reset() {
     homeboxEl.textContent = 0
-    homeboxEl.style.color = "black"
+    homeboxEl.style.color = "red"
     guestboxEl.textContent = 0
-    guestboxEl.style.color = "black"
+    guestboxEl.style.color = "red"
     periodNum.textContent = 1
 }
-
-// if (homeboxEl > guestboxEl){
-//     homebox.style.color="green"
-//     guestbox.style.color="red"
-// }else if (homeboxEl < guestboxEl){
-//     homebox.style.color="red"
-//     guestbox.style.color="green"
-// }else(homeboxEl === guestboxEl){
-//     homebox.style.color="green"
-//     guestbox.style.color="green"
-// 
