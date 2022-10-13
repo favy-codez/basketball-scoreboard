@@ -54,6 +54,8 @@ function add3points(){
 
 function reset() {
     // location.reload()
+    homebox= 0
+    guestbox = 0
     homeboxEl.textContent = 0
     homeboxEl.style.color = "red"
     guestboxEl.textContent = 0
@@ -69,9 +71,7 @@ function changeColors(){
         homeboxEl.style.color = "green"
         guestboxEl.style.color = "red"
     }else if (homebox == guestbox){
-        homeboxEl.style.color = "green"
-        guestboxEl.style.color = "green"
-    }else(){
-        
+        homeboxEl.classList.add(".winner")
+        guestboxEl.classList.add("loser")
     }
 }
