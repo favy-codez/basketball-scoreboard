@@ -138,11 +138,13 @@ body{
 
 @media screen and (max-width:375px){
     .container{
-        max-width: 400px;
+        max-width: 500px;
         padding: 2rem 1rem;
     }
     .homescore-box, .guestscore-box{
-        padding: 10px 2px;
+        padding: 10px 40px;
+        display: inline-block;
+        font-size: 1rem;
     }
     .homeSection h3, .guestSection h3{
         font-size: 1.7rem;
@@ -153,8 +155,11 @@ body{
     .homeButtons, .guestButtons{
         gap: 5px;
     }
+    .homeButtons button, .guestButtons button{
+        padding: 4px 9px;
+    }
     .sections{
-        padding: 0.6rem;
+        padding: 0.3rem;
     }
     .sections img{
         display: none;
