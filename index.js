@@ -10,21 +10,18 @@ let periodNo = 1
 function add1point() {
     homebox += 1
     homeboxEl.textContent = homebox
-    // homeboxEl.style.color = "white"
     changeColors()
 }
 
 function add2point() {
     homebox += 2
     homeboxEl.textContent = homebox
-    // homeboxEl.style.color = "white"
     changeColors()
 }
 
 function add3point() {
     homebox += 3
     homeboxEl.textContent = homebox
-    // homeboxEl.style.color = "white"
     changeColors()
 }
 
@@ -40,21 +37,18 @@ function period(){
 function add1points(x) {
     guestbox += 1
     guestboxEl.textContent = guestbox
-    guestboxEl.style.color = "white"
     changeColors()
 }
 
 function add2points(){
     guestbox += 2
     guestboxEl.textContent = guestbox
-    // guestboxEl.style.color = "white"
     changeColors()
 }
 
 function add3points(){
     guestbox += 3
     guestboxEl.textContent = guestbox
-    // guestboxEl.style.color = "white"
     changeColors()
 }
 
