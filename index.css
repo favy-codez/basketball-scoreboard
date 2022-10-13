@@ -136,6 +136,16 @@ body{
     transition: 0.7s;
 }
 
+.winner{
+    background-color: rgb(24, 157, 161);
+    color: #fff;
+}
+
+.loser{
+    background-color: red;
+    color: #fff;
+}
+
 @media screen and (max-width:375px){
     .container{
         max-width: 500px;
