@@ -138,12 +138,12 @@ body{
 
 .winner{
     background-color: rgb(24, 157, 161);
-    color: #fff;
+    /* color: #fff; */
 }
 
 .loser{
     background-color: red;
-    color: #fff;
+    /* color: #fff; */
 }
 
 @media screen and (max-width:375px){

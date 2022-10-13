@@ -57,21 +57,29 @@ function reset() {
     homebox= 0
     guestbox = 0
     homeboxEl.textContent = 0
-    homeboxEl.style.color = "red"
     guestboxEl.textContent = 0
-    guestboxEl.style.color = "red"
-    // periodNum.textContent = 1
+    periodNum.textContent = 1
+    changeColors()
 }
 
 function changeColors(){
-    if (guestbox > homebox){
-        homeboxEl.style.color = "red"
-        guestboxEl.style.color = "green"
+    if (homebox == 0 && guestbox == 0){
+        homeboxEl.classList.remove("winner", "loser")
+        guestboxEl.classList.remove("winner", "loser")
+    }else if(guestbox > homebox){
+        guestboxEl.classList.add("winner")
+        homeboxEl.classList.add("loser")
+        guestboxEl.classList.remove("loser")
+        homeboxEl.classList.remove("winner")
     }else if (homebox > guestbox){
-        homeboxEl.style.color = "green"
-        guestboxEl.style.color = "red"
-    }else if (homebox == guestbox){
-        homeboxEl.classList.add(".winner")
+        homeboxEl.classList.add("winner")
+        guestboxEl.classList.remove("winner")
+        homeboxEl.classList.remove("loser")
         guestboxEl.classList.add("loser")
+    }else{
+        homeboxEl.classList.add("winner")
+        guestboxEl.classList.remove("loser")
+        homeboxEl.classList.remove("loser")
+        guestboxEl.classList.add("winner")
     }
 }
