@@ -8,24 +8,23 @@ let periodNo = 1
 
 
 function add1point() {
-    let homebox= 0
     homebox += 1
     homeboxEl.textContent = homebox
-    homeboxEl.style.color = "white"
+    // homeboxEl.style.color = "white"
     changeColors()
 }
 
 function add2point() {
     homebox += 2
     homeboxEl.textContent = homebox
-    homeboxEl.style.color = "white"
+    // homeboxEl.style.color = "white"
     changeColors()
 }
 
 function add3point() {
     homebox += 3
     homeboxEl.textContent = homebox
-    homeboxEl.style.color = "white"
+    // homeboxEl.style.color = "white"
     changeColors()
 }
 
@@ -48,31 +47,35 @@ function add1points(x) {
 function add2points(){
     guestbox += 2
     guestboxEl.textContent = guestbox
-    guestboxEl.style.color = "white"
+    // guestboxEl.style.color = "white"
     changeColors()
 }
 
 function add3points(){
     guestbox += 3
     guestboxEl.textContent = guestbox
-    guestboxEl.style.color = "white"
+    // guestboxEl.style.color = "white"
     changeColors()
 }
 
 function reset() {
+    // location.reload()
     homeboxEl.textContent = 0
     homeboxEl.style.color = "red"
     guestboxEl.textContent = 0
     guestboxEl.style.color = "red"
-    periodNum.textContent = 1
-    changeColors()
+    // periodNum.textContent = 1
 }
 
 function changeColors(){
-    if (guestbox>homebox){
+    if (guestbox > homebox){
         homeboxEl.style.color = "red"
         guestboxEl.style.color = "green"
-    }else if (homebox>guestbox){
-        
+    }else if (homebox > guestbox){
+        homeboxEl.style.color = "green"
+        guestboxEl.style.color = "red"
+    }else if (homebox == guestbox){
+        homeboxEl.style.color = "green"
+        guestboxEl.style.color = "green"
     }
 }
