@@ -71,5 +71,7 @@ function changeColors(){
     }else if (homebox == guestbox){
         homeboxEl.style.color = "green"
         guestboxEl.style.color = "green"
+    }else(){
+        
     }
 }
